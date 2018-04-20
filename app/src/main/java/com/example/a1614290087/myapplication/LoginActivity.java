@@ -50,6 +50,16 @@ public class LoginActivity extends AppCompatActivity {
 
         );
 
+        ImageView mapGoogle = findViewById(R.id.mapShortcut);
+        mapGoogle.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent t = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(t);
+            }
+        });
+
 
 
         View criaConta = findViewById(R.id.criaConta);
